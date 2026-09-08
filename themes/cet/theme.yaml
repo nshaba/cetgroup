@@ -1,0 +1,12 @@
+name: 'Cet Timber and General Supply'
+description: 'Cet Timber and General Supply'
+author: vinlink
+homepage: ''
+code: Cetgroup
+authorUrl: 'https://victorkalabamu.paypesa.co.tz/'
+form:
+    fields:
+        site_name:
+            label: Cetgroup
+            comment: Timber
+            default: Cetgroup
