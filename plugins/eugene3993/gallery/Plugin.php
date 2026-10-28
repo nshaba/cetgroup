@@ -5,7 +5,7 @@ use Schema;
 use October\Rain\Database\Schema\Blueprint;
 use System\Classes\PluginBase;
 
-class Plugin extends PluginBase {   
+class Plugin extends PluginBase {
    public function pluginDetails() {
       return [
          'name'        => 'eugene3993.gallery::lang.plugin.details.name',
@@ -26,7 +26,15 @@ class Plugin extends PluginBase {
       ];
    }
 
-   public function registerPermissions() {}
+public function registerPermissions()
+{
+    return [
+        'eugene3993.gallery.manage' => [
+            'label' => 'Manage Gallery',
+            'tab'   => 'Gallery',
+        ],
+    ];
+}
 
    public function registerNavigation() {
       return [

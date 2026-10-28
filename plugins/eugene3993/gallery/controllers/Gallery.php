@@ -14,6 +14,10 @@ class Gallery extends Controller
       'Backend.Behaviors.ListController'
    ];
 
+   public $requiredPermissions = [
+    'eugene3993.gallery.manage'
+   ];
+
    public $formConfig = 'config_form.yaml';
    public $listConfig = 'config_list.yaml';
 
